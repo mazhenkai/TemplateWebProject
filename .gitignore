@@ -1,0 +1,50 @@
+# 真实配置与密钥（只提交 *.example）
+config/*
+!config/README.md
+!config/*.example
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*_rsa
+*_rsa.pub
+opt/**/keys/
+
+# 本地数据与运行日志（各自 README 除外）
+data/*
+!data/README.md
+log/*
+!log/README.md
+*.log
+
+# 打包产物
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Node / 前端
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# Go 编译产物（按实际二进制名补充）
+backend/bin/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# AI 助手本地设置
+.claude/settings.local.json
